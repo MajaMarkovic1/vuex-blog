@@ -23,6 +23,9 @@ export default new Vuex.Store({
     SET_POSTS (state, posts) {
       state.posts = posts
     },
+    ADD_POST (state, post){
+      state.posts.push(post)
+    }
   },
 
   actions: {
@@ -35,9 +38,15 @@ export default new Vuex.Store({
       })
     },
 
-  
-        
-      
-    }
+    addPost({ commit }){
+      posts
+      .add(post)
+      .then(r => r.data)
+      .then(posts => {
+      commit('ADD_POST', post)})
+      this.$router.push('/posts')}
+  }
+   
+    
   
 })
