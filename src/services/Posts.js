@@ -9,13 +9,13 @@ export default class Posts {
         return axios.get('posts')
     }
 
-    get(id){
-        return axios.get(`/posts/${id}`)
-    }
+    // get(id){
+    //     return axios.get(`/posts/${id}`)
+    // }
 
-    add(post){
-        return axios.post(`/posts/${post.id}`, post)
-    }
+    // add(post){
+    //     return axios.post(`/posts/${post.id}`, post)
+    // }
 
 }
 

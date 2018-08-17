@@ -6,11 +6,12 @@
                 {{ post.title }}
                 <router-link 
                     :to="{ name: 'single-post', params: { id: post.id } }" 
-                    class="btn btn-success">
-                    View post
+                    >
+                    <button class="btn btn-success">View post</button>
                 </router-link>
                 
             </li>
+            
         </ul>
     </div>
 </template>
@@ -34,5 +35,8 @@ export default {
 <style>
  .list-group-item {
      font-size: 1.5rem;
+     display: flex;
+     justify-content: space-between
  }
+
 </style>
